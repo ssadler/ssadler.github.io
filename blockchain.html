@@ -1,0 +1,56 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+
+<style>
+.main {
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 20px; 
+}
+</style>
+
+<div class="has-background-light main container">
+  <div class="content">
+    <h1>
+      Relavent experience for blockchain / haskell
+    </h1>
+    <p>
+    Some of the things I've done relevant to blockchain and / or haskell.
+    </p>
+    <h2>Hath</h2>
+    <p>
+      <a href="https://github.com/ssadler/hath/">Hath</a> is a suite of utlities created while I was working with Komodo. Of interest:
+      <ul>
+        <li>
+          <a href="https://github.com/ssadler/hath/tree/develop/src/Hath/Consensus">Consensus protocol</a> - A consensus protocol, using distributed-haskell for networking, and using multiple rounds and authenticated votes similar to Tendermint. This is not designed to be BFT, it's designed to enable a distributed gateway for posting merkle proofs between blockchains.
+        </li>
+        <li>A cross chain <a href="https://github.com/ssadler/hath/blob/develop/src/Hath/Notariser/ETHKMD.hs">notariser</a> using above consensus</a>.
+        <li>
+          <a href="https://github.com/ssadler/hath/blob/develop/src/Network/Ethereum/Crypto/Trie.hs">Patricia Merkle tree</a> in Haskell, and <a href="https://github.com/ssadler/hath/blob/develop/test/TestTrie.hs">tests</a>. Also, the Ethereum <a href="https://github.com/ssadler/hath/blob/develop/src/Network/Ethereum/Transaction/Types.hs">transaction</a>.
+        </li>
+      </ul>
+    </p>
+
+    <h2>Crypto-Conditions</h2>
+    <a href="https://tools.ietf.org/html/draft-thomas-crypto-conditions-04">Crypto-Conditions</a> is a composite challenge / response protocol for cryptographic ownership, similar in scope to <a href="https://www.coindesk.com/pieter-wuille-unveils-miniscript-a-new-smart-contract-language-for-bitcoin">Miniscript</a> for Bitcoin. It defines a merkle tree of n-of-m cryptographic challenges. BigchainDB used this while I worked there, and I implemented it <a href="http://hackage.haskell.org/package/cryptoconditions">in Haskell</a>. Later, I was hired by Komodo to implement it <a href="https://github.com/ssadler/libcryptoconditions">in C</a>.
+    <p>
+
+    <h2>BigchainDB</h2>
+    <ul>
+      <li>
+        A <a href="https://medium.com/@scottsadler_25422/how-to-build-a-high-scale-blockchain-e0f09f828eec">Post</a> on blockchain architecture.<br />
+      <li>
+        Plenty of <a href="https://github.com/bigchaindb/bigchaindb/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Assadler">code.</a>
+    </ul>
+
+    <h2>Misc</h2>
+    <ul>
+      <li><a href="https://github.com/ssadler/vmoney">VMoney</a>, a toy cryptocurrency using GIT.
+        <li><a href="http://hackage.haskell.org/package/piped">Piped</a>, a Haskell co-routine library.
+    </ul>
+      
+
+
+      
+  </div>
+</div>
